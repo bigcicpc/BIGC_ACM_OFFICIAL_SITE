@@ -1,7 +1,8 @@
 site_name: 北京印刷学院 ACM-ICPC 集训队官方网站
-theme: simple-blog
-extra_css:
-  - extra.css
+theme:
+  name: simple-blog
+  font: false
+
 nav:
   - 首页: index.md
   - 历年成绩: results.md
