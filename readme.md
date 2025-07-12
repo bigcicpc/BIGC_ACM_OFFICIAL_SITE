@@ -6,13 +6,9 @@
 
 本项目的 simple-blog 请使用 [此仓库](https://github.com/LeNotFound/mkdocs-simple-blog) 的版本。
 
-1. 克隆仓库到本地/下载zip
-```
-git clone https://github.com/LeNotFound/mkdocs-simple-blog.git
-```
+1. 从 [Release](https://github.com/LeNotFound/mkdocs-simple-blog/releases/tag/v0.2.0) 中下载 [mkdocs_simple_blog-0.2.0-py3-none-any.whl](https://github.com/LeNotFound/mkdocs-simple-blog/releases/download/v0.2.0/mkdocs_simple_blog-0.2.0-py3-none-any.whl)
 
-2. 解压并进入目录，安装
+2. 安装
 ```
-cd mkdocs-simple-blog
-pip install -e .
+pip install mkdocs_simple_blog-0.2.0-py3-none-any.whl
 ```
