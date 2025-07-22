@@ -14,3 +14,5 @@ nav:
       - 训练安排: 2025 新生训练计划/training.md
       - 新生赛: 2025 新生训练计划/contest.md
   - 面向零基础萌新的 ACM 入门指南: quickstart.md
+markdown_extensions:
+  - pymdownx.tilde

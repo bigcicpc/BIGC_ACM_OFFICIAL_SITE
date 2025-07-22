@@ -122,7 +122,7 @@ acmer指的是，参加XCPC系列比赛的选手。
 
 [VisuAlgo](https://visualgo.net/zh)通过动画可视化数据结构和算法的网站，方便你理解各种算法。
 
-🥳[OI Wiki](https://oi-wiki.org//)算法届的百科全书。
+🥳[OI Wiki](https://oi-wiki.org/)算法届的百科全书。
 
 🥳[cp-algorithms.com](https://cp-algorithms.com/index.html)英文网站，有的算法原理讲的很好！比如KMP的文章，是我见过最好的！
 
