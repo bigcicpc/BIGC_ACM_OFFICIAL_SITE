@@ -24,6 +24,7 @@ theme:
 
 nav:
   - 首页: index.md
+  - 贡献: CONTRIBUTING.md
   - 历年成绩: results.md
   - 成员信息: members.md
   - 集训队章程: rules.md
