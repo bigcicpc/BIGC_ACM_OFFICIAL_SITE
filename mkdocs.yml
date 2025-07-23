@@ -1,7 +1,26 @@
 site_name: 北京印刷学院 ACM-ICPC 集训队官方网站
 theme:
-  name: simple-blog
+  name: material
   font: false
+  palette:
+  - media: (prefers-color-scheme)
+    toggle:
+      icon: material/brightness-auto
+      name: Auto
+  - scheme: default
+    primary: teal
+    accent: purple
+    media: "(prefers-color-scheme: light)"
+    toggle:
+      icon: material/weather-sunny
+      name: Light Mode
+  - scheme: slate
+    primary: black
+    accent: lime
+    media: "(prefers-color-scheme: dark)"
+    toggle:
+      icon: material/weather-night
+      name: Dark Mode
 
 nav:
   - 首页: index.md
