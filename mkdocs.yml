@@ -36,5 +36,6 @@ nav:
   - 面向零基础萌新的 ACM 入门指南: quickstart.md
   - Jetbrains学生许可证申请: Jetbrains/Jetbrains学生许可证申请流程.md
   - python安装教程: 环境配置/python和pycharm安装及其环境搭建.md
+  - GitHub学生教育优惠申请: GitHub/Github申请教育优惠.md
 markdown_extensions:
   - pymdownx.tilde
