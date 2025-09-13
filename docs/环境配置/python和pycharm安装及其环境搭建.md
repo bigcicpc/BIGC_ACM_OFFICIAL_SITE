@@ -32,9 +32,7 @@ QQ截图（聊天窗口会有一个剪刀，鼠标放上去有快捷键alt+Ctrl+
 
 2、点击顶部的「查看」>「显示」，勾选和取消勾选「文件扩展名」选项，可以显示和隐藏文件后缀。
 
-![img](https://img.jbzj.com/file_images/article/202411/2024110510180449.jpg)
-
-
+![img](assets\显示隐藏文件和后缀.jpg)
 
 一些常见的文件扩展名
 
@@ -215,6 +213,8 @@ python环境搭建
 
 # 二、安装python
 
+## 方法一：官网安装
+
 ### 1、找到官方网站
 
 官网网址:[Welcome to Python.org](https://www.python.org/)
@@ -225,13 +225,11 @@ python环境搭建
 
 选择 "Download for Windows"：
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/e7a911477cff38b941af102fb67c5ee1.png)
-
-![备课python版本问题1](个人介绍-》学什么东西-》环境搭建/imgs/备课python版本问题1.png)
+![img](assets\python官网下载.png)
 
 下载完成后，会得到一个 exe 的安装程序。
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/0975457b50713f7ff7e768af04a164e1.png)
+![img](assets\python安装包exe.png)
 
 ### 3、双击安装包
 
@@ -241,18 +239,47 @@ python环境搭建
 
 点击 Install Now 之后稍等片刻，就安装完毕了。
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/dfaf32fd67be29445d871f95eb1b056c.png)
+![img](assets\点击安装.png)
 
 ### 4、运行 hello world
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/bab6b28e9b5c99e9b4daa3973fc78ef8.png)
+![img](assets\找到python-exe.png)
 
 其中最关键的就是这个 python.exe，后续运行 Python 程序，全靠这个 python.exe。
 
 如果直接双击这个 python.exe，就会打开 Python 的交互式解释器（控制台程序）。在这个交互式解释器中，就可以输入 Python 代码了。直接输入 print('hello') 这句代码，按下 enter 键，则打印出了 hello 这样的结果。
 
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/29dabe46966a84e60f315d24389a7a63.png)
+![img](assets\检查是否安装成功.png)
+
+## 方法二： 国内镜像站 安装
+
+在国内安装 Python 时，由于网络原因，直接从官网下载可能速度较慢。以下是使用国内镜像站安装 Python 的详细教程 
+
+### 1.找到国内 Python 镜像站
+
+推荐几个稳定的国内 Python 镜像站：
+
+- 清华大学开源软件镜像站：https://mirrors.tuna.tsinghua.edu.cn/python/
+
+- 阿里云开源镜像站：https://mirrors.aliyun.com/python/
+
+- 中国科学技术大学镜像站：https://mirrors.ustc.edu.cn/python/
+
+  ### 2.选择镜像站下载安装包
+
+  打开上述任意镜像站，进入 `python` 目录，根据需要选择版本（推荐 3.8 及以上版本）：
+
+  - 进入对应版本文件夹（如 `3.11.4/`）
+  - 下载适合 Windows 的安装包：
+    - 64 位系统：选择 `python-3.11.4-amd64.exe`
+    - 32 位系统：选择 `python-3.11.4.exe`
+
+  ### 3. **运行安装程序** 
+
+  （以下步骤与方法一类似，可参考方法一的“3、双击安装包”）
+  
+  双击下载的 `.exe` 文件，勾选 **"Add Python 3.x to PATH"**（重要，自动配置环境变量），然后点击 **"Install Now"** 进行默认安装，或选择 **"Customize installation"** 自定义安装路径。
 
 ## 三、安装 PyCharm
 
@@ -263,31 +290,31 @@ python环境搭建
 JetBrains 是捷克的一家互联网公司，主要的业务就是开发编程工具，像 Java 的 IDEA，C++ 的 CLion，Python 的 PyCharm，Go 的 GoLand 等等都是出于 JetBrains 之手。这些工具功能都非常强大，深受广大程序员的喜爱，因此网友们也亲切的称呼这些开发工具为 “JB 全家桶”。
 
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/0b076c3f34f559074432466f51bba469.png)
+![img](assets\pycharm官网下载.png)
 
 ### 3、双击安装包
 
 双击安装包，选择 “下一步”
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/3563e6dd4c91ecf78d1a235aedbf6021.png)
+![img](assets\安装pycharm.png)
 
 注意选择安装路径：
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/37eec4f382f629f2e0b5aa1354345559.png)
+![img](assets\pychram路径选择.png)
 
-![pycharm安装-1](https://i-blog.csdnimg.cn/direct/ad6aeace596947e789e2b91436047fa9.png)
+![pycharm安装-1](assets\pychram安装配置.png)
 
 选择 "JetBrains "，直接安装即可，这个安装过程非常简单，一般只要不报错，就算安装成功。
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/2ab80e5fe2d00e8cf2f842ce19c8ca20.png)
+![img](assets\pychram安装成功.png)
 
 #### （1）创建一个项目
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/8c01eecff31e50a071dc7ca83da3c6f9.png)
+![img](assets\创建第一个项目.png)
 
-#### （2）选择项目所在的位置，并选择使用的 Python 解释器
+#### （2）选择项目所在的位置，并选择使用的 Python 解释器（就是刚才下载的exe文件）
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/1e7fd9be11cda3257da04f6beb1458c9.png)
+![img](assets\配置第一个项目.png)
 
 
 
@@ -295,11 +322,11 @@ JetBrains 是捷克的一家互联网公司，主要的业务就是开发编程�
 
 右键左侧的项目目录，选择 New -> Python File
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/9f6f746dd00d809325c6c3dd97cd0ac4.png)
+![img](assets\创建py文件.png)
 
 接着填写文件名：
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/1945f15d648922a85bd24963d8f1dc6d.png)
+![img](assets\命名py文件.png)
 
 #### （4）编写代码
 
@@ -307,9 +334,9 @@ JetBrains 是捷克的一家互联网公司，主要的业务就是开发编程�
 
 右键文件，选择 "Run 'hello' "
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/a3b362976332f483763c68393fbe5336.png)
+![img](assets\运行py文件.png)
 
-![img](https://i-blog.csdnimg.cn/blog_migrate/6955d1e3868dee624c6b70217c016b01.png)
+![img](assets\运行结果.png)
 
 
 

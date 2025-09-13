@@ -35,6 +35,6 @@ nav:
       - 新生赛: 2025 新生训练计划/contest.md
   - 面向零基础萌新的 ACM 入门指南: quickstart.md
   - Jetbrains学生许可证申请: Jetbrains/Jetbrains学生许可证申请流程.md
-  - python安装教程: python-install/python和pycharm安装及其环境搭建.md
+  - python安装教程: 环境配置/python和pycharm安装及其环境搭建.md
 markdown_extensions:
   - pymdownx.tilde
