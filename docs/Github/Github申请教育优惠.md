@@ -38,6 +38,12 @@
 
 ![image-20250913180048125](./assets/Githu教育优惠申请界面.png)
 
+按照如下图片填写，邮箱是默认是注册Github时的邮箱
+
+**Beijing Institute Graphic Communication**
+
+![](./assets/Github教育申请基本信息.png)
+
 按照如下图片填写即可，可以直接复制下列信息
 
 1. **https://www.bigc.edu.cn/**
