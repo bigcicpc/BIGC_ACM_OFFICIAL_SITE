@@ -38,7 +38,7 @@
 
 ![image-20250913180048125](./assets/Githu教育优惠申请界面.png)
 
-按照如下图片填写，邮箱是默认是注册Github时的邮箱
+按照如下图片填写，邮箱默认是注册Github时的邮箱
 
 **Beijing Institute Graphic Communication**
 
