@@ -32,8 +32,10 @@
 
 ![vscode插件安装](assets/vscode插件安装.png)
 
-搜索并安装如下插件：
-- [Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)
+搜索并安装如下插件：  
+
+- [Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)  
+
 - [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 
 更换语言后需重启 vscode。
