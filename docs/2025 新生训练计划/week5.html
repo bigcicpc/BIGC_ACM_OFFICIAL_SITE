@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2025ACM预备队见面会</title>
+  <style>
+    /* 参考 ACM/ICPC 配色与质感：浅底+霓虹蓝紫+玻璃拟态 */
+    :root{
+      --bg:#f6f8ff;               /* 页面浅色背景 */
+      --panel:#ffffffd9;           /* 面板浅色半透明 */
+      --glass:#ffffffcc;           /* 玻璃卡片 */
+      --text:#142136;              /* 主要文字 */
+      --muted:#5b6b85;             /* 次要文字 */
+      --line:#d7deee;              /* 细分割线 */
+      --primary:#2b79c2;           /* ACM 蓝 */
+      --accent:#7a5cff;            /* 点缀紫 */
+      --shadow:0 10px 30px rgba(12,29,66,.08);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      color:var(--text);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(1200px 800px at 20% -10%, rgba(116,173,230,.18) 0%, transparent 60%),
+        radial-gradient(1000px 700px at 120% 10%, rgba(185,168,255,.16) 0%, transparent 55%),
+        var(--bg);
+      overflow:hidden;
+    }
+
+    /* 背景图 + 柔光渐变覆盖，独立层保证前景可做玻璃拟态 */
+    .bg-image{position:fixed; inset:0; z-index:-2;
+      background:url('assets/bg.png') center/cover no-repeat;
+      filter:grayscale(.05) contrast(.95) brightness(.94) saturate(.9);
+      transform:scale(1.02);
+    }
+    .bg-overlay{position:fixed; inset:0; z-index:-1;
+      background:
+        radial-gradient(120% 140% at 10% -10%, rgba(116,173,230,.22), transparent 40%),
+        radial-gradient(100% 140% at 120% 10%, rgba(185,168,255,.18), transparent 45%),
+        linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,255,255,.86));
+      backdrop-filter:saturate(1.1) blur(2px);
+    }
+
+    /* 居中舞台 */
+    .stage{
+      min-height:100dvh; /* 移动端友好 */
+      display:grid;
+      place-items:center;
+      padding:6vh 20px;
+    }
+
+    /* 玻璃卡片标题 */
+    .title-card{
+      position:relative;
+      padding:28px 28px; /* 仅标题，适度留白 */
+      border-radius:16px;
+      border:1px solid #d2dcf1;
+      background:linear-gradient(180deg, rgba(255,255,255,.78), rgba(255,255,255,.68));
+      box-shadow: var(--shadow);
+      backdrop-filter:saturate(1.2) blur(6px);
+      text-align:center;
+      animation: floatIn .8s cubic-bezier(.22,.9,.3,1.2) both;
+    }
+    .title-card::after{
+      content:""; position:absolute; inset:0; border-radius:16px; pointer-events:none;
+      background:linear-gradient(120deg, rgba(43,121,194,.18), rgba(122,92,255,.18));
+      mask:linear-gradient(#000, transparent 60%);
+      mix-blend-mode:multiply;
+    }
+
+    h1{
+      margin:2px 0;
+      font-size: clamp(28px, 6vw, 56px);
+      line-height:1.12;
+      letter-spacing:.02em;
+      font-weight:800;
+      background:linear-gradient(90deg, var(--primary), var(--accent));
+      -webkit-background-clip:text; background-clip:text;
+      -webkit-text-fill-color:transparent; color:transparent;
+    }
+
+    /* 轻微入场动效 */
+    @keyframes floatIn{
+      from{opacity:0; transform:translateY(10px) scale(.98)}
+      to{opacity:1; transform:translateY(0) scale(1)}
+    }
+
+    /* 响应式微调 */
+    @media (max-width:640px){
+      .title-card{padding:22px 20px; border-radius:14px}
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-image"></div>
+  <div class="bg-overlay"></div>
+
+  <main class="stage" aria-label="封面">
+    <section class="title-card" role="banner">
+      <h1>2025ACM预备队见面会</h1>
+    </section>
+  </main>
+</body>
+</html>
